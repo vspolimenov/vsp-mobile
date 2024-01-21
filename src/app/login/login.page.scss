@@ -1,0 +1,116 @@
+ion-content {
+    --background: #000; /* Black background for the entire content */
+    --ion-background-color: #000; /* Ensure background consistency across components */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 16px;
+  }
+  
+  .login-card {
+    background: #1e1e1e; /* Dark grey background */
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: #fff; /* White text color */
+  
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    p {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #a1a1a1;
+    }
+  
+    ion-item {
+      --background: #2a2a2a; /* Slightly lighter grey for input fields */
+      --padding-start: 0;
+      --inner-padding-end: 0;
+      --inner-border-radius: 0;
+      --border-radius: 8px;
+      --border-color: transparent;
+      --placeholder-color: #a1a1a1;
+      --placeholder-font-size: 1rem;
+      --placeholder-font-weight: 300;
+      --color: #fff; /* White text color */
+      --ion-item-color: #fff; /* White text color */
+      margin-bottom: 1rem;
+  
+      ion-label {
+        --color: #a1a1a1;
+      }
+  
+      ion-input {
+        --padding-start: 1rem;
+      }
+    }
+  
+    ion-button {
+      --background: #0dafff; /* Vibrant blue background */
+      --border-radius: 8px;
+      --color: #000; /* Black text color */
+      --padding-vertical: 12px;
+      --padding-horizontal: 20px;
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 12px rgba(13, 175, 255, 0.4); /* Matching subtle shadow */
+      font-weight: 500;
+      text-transform: none;
+    }
+  
+    .alternative-login {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+  
+      ion-button {
+        --background: #262626; /* Dark background for social buttons */
+        --border-radius: 8px;
+        --box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); /* Shadow for buttons */
+        --color: #a1a1a1; /* Light grey text */
+        --padding-vertical: 12px;
+        --padding-horizontal: 20px;
+        flex-grow: 1;
+        margin: 0 8px; /* Space out buttons */
+      }
+  
+      ion-icon {
+        margin-right: 8px; /* Icon spacing */
+      }
+    }
+  
+    .or-divider {
+      color: #a1a1a1;
+      text-align: center;
+      margin: 2rem 0;
+    }
+  }
+  
+  ion-footer {
+    ion-toolbar {
+      --background: transparent;
+      border-top: none;
+    }
+  
+    .footer-text {
+      text-align: center;
+      color: #a1a1a1;
+      a {
+        color: #0dafff;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+  }
+  
